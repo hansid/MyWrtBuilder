@@ -9,12 +9,12 @@ on:
     inputs:
       release: 
         description: 将编译出的镜像上传到 Release
-        required: false
-        default: 'false'
+        required: true
+        default: 'true'
       upload-all:
         description: 将编译出的所有镜像都上传到 Artifacts
         required: false
-        default: 'true'
+        default: 'false'
 
 env:
   DOWNLOAD_BASE: https://downloads.openwrt.org
@@ -26,7 +26,7 @@ jobs:
   # This workflow contains a single job called "build"
   Generate:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
