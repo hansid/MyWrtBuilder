@@ -6,4 +6,4 @@ make info
 # 主配置名称
 PROFILE="generic"
 
-make image PROFILE="$PROFILE" PACKAGES="luci"
+make image PROFILE="$PROFILE"
